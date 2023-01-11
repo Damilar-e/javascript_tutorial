@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="day"></h1>
+    <h2 id="learn"></h2>
+    <h2 id="ass_oper"></h2>
+    <ul>
+        <li id="typ1"></li>
+        <li id="typ2"></li>
+        <li id="typ3"></li>
+        <li id="typ4"></li>
+        <li id="typ5"></li>
+    </ul>    
+    <h2 id="cond_oper"></h2>
+    <h2 id="logic_oper"></h2>
+    <h2 id="comp_oper"></h2> 
+
+
+    <script>
+        document.getElementById('day').innerHTML = "This is my Day 3 learning Javascript";
+        document.getElementById('learn').innerHTML = 'Today we learnt about some operators and their various types, which are Assignment Operators'
+          + ' Conditional Operators and Comparism Operators ';
+        document.getElementById('ass_oper').innerHTML = 'Assignment operators assign values to JavaScript variables. There are majorly 5 types which are;'
+        document.getElementById('typ1').innerHTML = ' "+= " The Addition Assignment Operator adds a value to a variable.'
+        document.getElementById('typ2').innerHTML = ' "-= " The Subtract Assignment Operator subtracts a value to a variable.'
+        document.getElementById('typ3').innerHTML = ' "*= " The Muliplication Assignment Operator multiplies a value to a variable.'
+        document.getElementById('typ4').innerHTML = ' "/= " The Divison Assignment Operator divides a value to a variable.'
+        document.getElementById('typ5').innerHTML = ' "%= " The Reminder Assignment Operator divides a value to a variable.'
+                    
+                // EXAMPLE OF ASSIGNMENT OPERATORS
+            b = 35
+            b %= 10
+            console.log(b)
+
+            c = 20
+            c -= 5
+            console.log(c)
+
+        document.getElementById('cond_oper').innerHTML = 'The conditional operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?),'
+          + ' then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement. '
+                
+                // EXAMPLE OF  CONDITIONAL OPERATORS
+            let a = 20 > 10 ? "welcome" : "fool"
+            console.log(a)
+
+            score = 68
+            let grade = score > 100 ? "great" : "fail"
+            console.log(grade)
+
+        document.getElementById('logic_oper').innerHTML = 'Logical operators are used to determine the logic between variables or values.'
+          + ' There are 3 types of logical which are; "AND (&&)" , "OR (||)" and "NOT (!)" ' 
+           
+                    // EXAMPLE OF LOGICAL OPERATORS
+            b = ( (5 > 10 ) && (10 < 100) )
+            console.log(b)
+            
+            
+            c = ( (5 > 10 ) || (10 < 100) )
+            console.log(c)
+
+            
+            d = ! (10 < 100) 
+            console.log(d)
+   
+        document.getElementById('comp_oper').innerHTML = 'Comparison operators are used in logical statements to determine equality or difference between variables or values. <br> '
+         + 'Comparison and Logical operators are used to test for true or false.'
+
+                // EXAMPLE OF COMPARISM OPERATORS
+            let x = 15
+            let y = 5
+            console.log(x > y)
+            console.log(x < y)
+            console.log(x == y)
+            console.log(x === y)
+            console.log(x != y)
+            console.log(x <= y)
+            console.log(x >= y)
+
+    </script>
+</body>
+</html>
