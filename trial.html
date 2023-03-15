@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- inline javascript -->
+      <div class="containter">
+        <div class="calc" style="box-shadow: 6px 6px 13px #fff 6px 6px 13px rgba(0, 0, 0, .16); padding: 16px; display: grid; grid-template-columns: repeat(3,66px); ">
+            <input type="text" id="score" placeholder="0" style=" grid-column: span 3">
+                <button class="btn btn-outline-primary my-2" onclick="one()">1</button>
+                <button class="btn btn-outline-primary my-2" onclick="two()">2</button>
+                <button class="btn btn-outline-primary my-2" onclick="three()">3</button>
+                <button class="btn btn-outline-primary my-2" onclick="four()">4</button>
+                <button class="btn btn-outline-primary my-2" onclick="five()">5</button>
+                <button class="btn btn-outline-primary my-2" onclick="six()">6</button>
+                <button class="btn btn-outline-primary my-2" onclick="seven()">7</button>
+                <button class="btn btn-outline-primary my-2" onclick="eight()">8</button>
+                <button class="btn btn-outline-primary my-2" onclick="nine()">9</button>
+                <button class="btn btn-outline-primary my-2" onclick="zero()">0</button>
+                <button class="btn btn-outline-primary my-2" onclick="plus()">+</button>
+                <button class="btn btn-outline-primary my-2" onclick="mult()">*</button>
+                <button class="btn btn-outline-primary my-2" onclick="minus()">-</button>
+                <button class="btn btn-outline-primary my-2" onclick="clr()">Clear</button>
+                <button class="btn btn-outline-primary my-2" onclick="div()">/</button>
+                <button class="" onclick="equal()" style="width: 198px;">=</button>
+         </div>
+       </div>  
+            <!--Javascript <==============================================================================================> -->
+
+            <script>
+                function one(){
+                document.getElementById('score').value += 1;
+                }
+
+                function two(){
+                document.getElementById('score').value += 2;
+                }
+
+                function three(){
+                document.getElementById('score').value += 3;
+                }
+
+                function four(){
+                document.getElementById('score').value += 4;
+                }
+
+                function five(){
+                document.getElementById('score').value += 5;
+                }
+
+                function six(){
+                document.getElementById('score').value += 6;
+                }
+
+                function seven(){
+                document.getElementById('score').value += 7;
+                }
+
+                function eight(){
+                document.getElementById('score').value += 8;
+                }
+
+                function nine(){
+                document.getElementById('score').value += 9;
+                }
+
+                function zero(){
+                document.getElementById('score').value += 0;
+                }
+
+                function equal(){
+                document.getElementById('score').value=eval(document.getElementById('score').value)
+                }
+
+                function clr(){
+                document.getElementById('score').value=''
+                }
+
+                function plus(){
+                document.getElementById('score').value+='+'
+                }
+
+                function minus(){
+                document.getElementById('score').value+='-'
+                }
+
+                function mult(){
+                document.getElementById('score').value+='*'
+                }
+
+                function div(){
+                document.getElementById('score').value+='/'
+                }
+            </script>
+           
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Function</title>
+</head>
+<body>
+    <div id="greet"></div>
+    <div id="sum"></div>
+    <div id="add"></div>
+    <div id="min"></div>
+    <div id="mult"></div>
+    <div id="div"></div>
+    <div id="rem"></div>
+    <p onclick="greeting()">greeting</p>
+    <input type="text" id="output">
+    <br>
+    <button onclick="one()">1</button>
+    <script>
+
+        // Syntax
+        // function functionName (parameters){
+        //     codes
+        // }
+
+       function greeting (){
+        let name = 'faruq damilare';
+        document.getElementById('greet').innerText = "Welcome to our store, " + name
+       }  
+       
+       function one(){
+        document.getElementById('output').value += 1
+       }
+
+       function sum(a, b){
+        document.getElementById('sum').innerHTML = a + b
+       }
+       sum(20, 40);
+
+                        //EXERCISE
+          //ADDITION OPERTOR
+       function add(c, d){
+        document.getElementById('add').innerHTML = c + d
+       }
+       add(80, 20);           
+       
+            //SUBTRACTION OPERTOR
+            function min(e, f){
+        document.getElementById('min').innerHTML = e - f
+       }
+       min(80, 20);           
+
+            //MULTIPLICATION OPERTOR
+            function mult(g, h){
+        document.getElementById('mult').innerHTML = g*h
+       }
+       mult(80, 20);           
+
+            //DIVISION OPERTOR
+            function div(i, j){
+        document.getElementById('div').innerHTML = i / j
+       }
+       div(80, 20);           
+
+            //REMINDER OPERTOR
+            function rem(k, l){
+        document.getElementById('rem').innerHTML = k % l
+       }
+       rem(80, 20);           
+
+           
+    </script>
+</body>
+</html>

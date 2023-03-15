@@ -7,11 +7,7 @@
 </head>
 <body>
    
-                <!-- DAY 1  -->
-    
-    <!-- <h1 id="class">First Day Class</h1> -->
-     <!-- <p onclick="this.innerHTML='Welcome to Javascript class'"> Hello World</p> -->
-
+   
      <h1 id="about"></h1>
      <h2 id="name"></h2>
      <h2 id="info"></h2>
@@ -19,23 +15,40 @@
      <h3 id="home"></h3>
      <h3 id="hobby"></h3>
 
+      <style>
+        #about{
+          text-align: center;
+          font-size: 35px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      </style>
     <script>
       document.getElementById('about').innerHTML = 'Details About Myself'
+       let about = document.getElementById('about').innerHTML
+        console.log(about)
+
       document.getElementById('name').innerHTML = 'My name is Akinkunmi Faruq Damilare'
+       let name = document.getElementById('name').innerHTML
+        console.log(name)
+
       document.getElementById('info').innerHTML = 'I am a graduate of Computer science, with passion for Web development'
+       let info = document.getElementById('info').innerHTML
+        console.log(info)
+
       document.getElementById('food').innerHTML = 'My favourite delicacy is Rice, there are various and multiple ways it can be prepared. I know this because i am a very good cook and i like to cook';
+       let food = document.getElementById('food').innerHTML
+       console.log(food)
+
       document.getElementById('home').innerHTML = 'I am a native born of Osogbo, Osun State. I have lived here all my life and i have never travelled before, for I am not a fan of travelling';
-      document.getElementById('hobby').innerHTML = 'My hobbies are binge watching long TV shows that would keep me occupied for quite some time and when i get tired, I like to code and listen to music simultaneously '
+       let home = document.getElementById('home').innerHTML
+        console.log(home)
+
+      document.getElementById('hobby').innerHTML = 'My hobbies are binge watching long TV shows that would keep me occupied for quite some time and when i get tired, I like to code and listen to music simultaneously'
        + 'it can be fun for me ';
+        let hobby = document.getElementById('hobby').innerHTML
+         console.log(hobby)
   
-
-
-     //   document.write("hello world")
-     //   alert(88 + 20)
-        // console.log('Peter Obi will win')
-       // document.getElementById('class').innerHTML
-     //  document.getElementById('class').innerHTML = 'welcome to day 2 class'
-                 
+    
     </script>
 
 
